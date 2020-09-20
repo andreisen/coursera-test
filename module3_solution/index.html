@@ -100,5 +100,38 @@
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+
+  <script type="text/javascript">
+   var x = 10;
+    if ( (null) || (console.log("Hello")) || x > 5 ) {
+      console.log("Hello");
+    }
+
+    function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype.bark = function () {
+  console.log(this.name + " likes barking! Bark!");
+}
+
+var max = new Dog("Max", "Buddy");
+max.bark();
+
+ (function(window) {
+ 
+  var obj = {};
+
+    obj.dreamOn = function () {
+            console.log("I want to see the global scope! Let me out!");
+     };
+
+     window.doer = obj;
+ 
+ });
+
+ doer.dreamOn();
+
+ </script>
 </body>
 </html>
